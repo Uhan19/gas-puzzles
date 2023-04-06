@@ -5,7 +5,7 @@ contract ArraySort {
     function sortArray(uint256[] calldata data) external pure returns (uint256[] memory) {
         uint256 dataLen = data.length;
 
-        // Create 'working' copy
+        // Create 'working' copy 
         uint[] memory _data = new uint256[](dataLen);
         for (uint256 k = 0; k < _data.length; k++) {
             _data[k] = data[k];
